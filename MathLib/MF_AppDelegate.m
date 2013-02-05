@@ -2,8 +2,9 @@
 //  MF_AppDelegate.m
 //  MathLib
 //
+//  Public Domain
+//  By Freshcode, Cutting edge Mac, iPhone & iPad software development. http://madefresh.ca/
 //  Created by Dave Poirier on 2013-02-01.
-//  Copyright (c) 2013 Freshcode. All rights reserved.
 //
 
 #import "MF_AppDelegate.h"

@@ -3,8 +3,9 @@
 #  bc.sh
 #  MathLib
 #
-#  Created by Dave Poirier on 2013-02-05.
-#  Copyright (c) 2013 Freshcode. All rights reserved.
+#  Public Domain
+#  By Freshcode, Cutting edge Mac, iPhone & iPad software development. http://madefresh.ca/
+#  Created by Dave Poirier on 2013-02-01.
 
 echo "obase=16; ibase=16; print $1"|bc
 echo

@@ -2,6 +2,7 @@
 //  mathlib.h
 //  MathLib
 //
+//
 //  A mathematical library providing basic math operations on data types from 8-bits to 1024-bits
 //  with overflow/underflow tracking.
 //
@@ -15,7 +16,8 @@
 //  Licensing
 //  ---------
 //  Public Domain
-//  Originally created by Dave Poirier on 2013-02-01.
+//  By Freshcode, Cutting edge Mac, iPhone & iPad software development. http://madefresh.ca/
+//  Created by Dave Poirier on 2013-02-01.
 //
 //  Compatibility Notice
 //  --------------------
