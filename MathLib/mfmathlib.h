@@ -1,6 +1,7 @@
 //
-//  mathlib.h
-//  MathLib
+//  mfmathlib.h
+//  MFMathLib
+//  https://github.com/freshcode/MFMathLib
 //
 //
 //  A mathematical library providing basic math operations on data types from 8-bits to 1024-bits

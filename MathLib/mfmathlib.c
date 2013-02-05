@@ -1,6 +1,7 @@
 //
-//  mathlib.c
-//  MathLib
+//  mfmathlib.c
+//  MFMathLib
+//  https://github.com/freshcode/MFMathLib
 //
 //  Public Domain
 //  By Freshcode, Cutting edge Mac, iPhone & iPad software development. http://madefresh.ca/
