@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7823978B16C1584300333D98 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7823978A16C1584300333D98 /* Accelerate.framework */; };
+		782397B816C16C7700333D98 /* bc.sh in Resources */ = {isa = PBXBuildFile; fileRef = 782397B716C169FC00333D98 /* bc.sh */; };
 		788450C916BB887A001900B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788450C816BB887A001900B2 /* Cocoa.framework */; };
 		788450D316BB887A001900B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 788450D116BB887A001900B2 /* InfoPlist.strings */; };
 		788450D516BB887A001900B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788450D416BB887A001900B2 /* main.m */; };
 		788450D916BB887A001900B2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 788450D716BB887A001900B2 /* Credits.rtf */; };
 		788450DC16BB887A001900B2 /* MF_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788450DB16BB887A001900B2 /* MF_AppDelegate.m */; };
 		788450DF16BB887A001900B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788450DD16BB887A001900B2 /* MainMenu.xib */; };
+		788450E616BB889E001900B2 /* mfmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 788450E516BB889E001900B2 /* mfmathlib.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7823978A16C1584300333D98 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		782397B716C169FC00333D98 /* bc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bc.sh; sourceTree = "<group>"; };
 		788450C516BB887A001900B2 /* MathLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788450C816BB887A001900B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		788450CB16BB887A001900B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +34,8 @@
 		788450DA16BB887A001900B2 /* MF_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MF_AppDelegate.h; sourceTree = "<group>"; };
 		788450DB16BB887A001900B2 /* MF_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MF_AppDelegate.m; sourceTree = "<group>"; };
 		788450DE16BB887A001900B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		788450E516BB889E001900B2 /* mfmathlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mfmathlib.c; sourceTree = "<group>"; };
+		788450E716BB88AA001900B2 /* mfmathlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mfmathlib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7823978B16C1584300333D98 /* Accelerate.framework in Frameworks */,
 				788450C916BB887A001900B2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +54,7 @@
 		788450BC16BB887A001900B2 = {
 			isa = PBXGroup;
 			children = (
+				7823978A16C1584300333D98 /* Accelerate.framework */,
 				788450CE16BB887A001900B2 /* MathLib */,
 				788450C716BB887A001900B2 /* Frameworks */,
 				788450C616BB887A001900B2 /* Products */,
@@ -84,6 +93,9 @@
 			children = (
 				788450DA16BB887A001900B2 /* MF_AppDelegate.h */,
 				788450DB16BB887A001900B2 /* MF_AppDelegate.m */,
+				782397B716C169FC00333D98 /* bc.sh */,
+				788450E516BB889E001900B2 /* mfmathlib.c */,
+				788450E716BB88AA001900B2 /* mfmathlib.h */,
 				788450DD16BB887A001900B2 /* MainMenu.xib */,
 				788450CF16BB887A001900B2 /* Supporting Files */,
 			);
@@ -157,6 +169,7 @@
 				788450D316BB887A001900B2 /* InfoPlist.strings in Resources */,
 				788450D916BB887A001900B2 /* Credits.rtf in Resources */,
 				788450DF16BB887A001900B2 /* MainMenu.xib in Resources */,
+				782397B816C16C7700333D98 /* bc.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +182,7 @@
 			files = (
 				788450D516BB887A001900B2 /* main.m in Sources */,
 				788450DC16BB887A001900B2 /* MF_AppDelegate.m in Sources */,
+				788450E616BB889E001900B2 /* mfmathlib.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +318,7 @@
 				788450E416BB887A001900B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
