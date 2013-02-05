@@ -14,9 +14,9 @@
 //  --------------------
 //  unsigned int must be at least 32-bits.
 //
-// TODO: all 512 and 1024 bits operations
-// TODO: Divide, Substract.
-// TODO: more shift functions
+//  TODO:
+//  -----
+//  All signed operations
 
 #include <stdio.h>
 #include <stdlib.h>
