@@ -3,13 +3,15 @@ MFMathLib
 
 8-bit to 1024-bit (easily extendable) mathematic library with overflow/underflow detection
 
-by Freshcode, Cutting edge Mac, iPhone & iPad software development.
-http://madefresh.ca/
 
 
 Licensing
 =========
 Public Domain
+
+by Freshcode, Cutting edge Mac, iPhone & iPad software development.
+http://madefresh.ca/
+
 Originally created by Dave Poirier on 2013-02-01.
 
 Compatibility
