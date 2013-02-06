@@ -234,7 +234,7 @@ mfComparisonResult mfCompareU512( mfU512 *e, mfU512 *r ) { return mfCompareUX(e-
 mfComparisonResult mfCompareU1024( mfU1024 *e, mfU1024 *r ) { return mfCompareUX(e->b, r->b, sizeof(mfU1024)); }
 
 #pragma mark - Zero Test
-unsigned int mfiszeroX( const mfU8 *e, unsigned int bytes )
+unsigned int mfIsZeroX( const mfU8 *e, unsigned int bytes )
 {
     mfU8 eb = 0;
     while( bytes-- ) {
@@ -242,14 +242,14 @@ unsigned int mfiszeroX( const mfU8 *e, unsigned int bytes )
     }
     return (eb == 0) ? 1 : 0;
 }
-unsigned int mfiszero8( const mfU8 *e ) { return (*e == 0) ? 1 : 0; }
-unsigned int mfiszero16( const mfU16 *e ) { return mfiszeroX( e->b, sizeof(mfU16) ); }
-unsigned int mfiszero32( const mfU32 *e ) { return mfiszeroX( e->b, sizeof(mfU32) ); }
-unsigned int mfiszero64( const mfU64 *e ) { return mfiszeroX( e->b, sizeof(mfU64) ); }
-unsigned int mfiszero128( const mfU128 *e ) { return mfiszeroX( e->b, sizeof(mfU128) ); }
-unsigned int mfiszero256( const mfU256 *e ) { return mfiszeroX( e->b, sizeof(mfU256) ); }
-unsigned int mfiszero512( const mfU512 *e ) { return mfiszeroX( e->b, sizeof(mfU512) ); }
-unsigned int mfiszero1024( const mfU1024 *e ) { return mfiszeroX( e->b, sizeof(mfU1024) ); }
+unsigned int mfIsZero8( const mfU8 *e ) { return (*e == 0) ? 1 : 0; }
+unsigned int mfIsZero16( const mfU16 *e ) { return mfIsZeroX( e->b, sizeof(mfU16) ); }
+unsigned int mfIsZero32( const mfU32 *e ) { return mfIsZeroX( e->b, sizeof(mfU32) ); }
+unsigned int mfIsZero64( const mfU64 *e ) { return mfIsZeroX( e->b, sizeof(mfU64) ); }
+unsigned int mfIsZero128( const mfU128 *e ) { return mfIsZeroX( e->b, sizeof(mfU128) ); }
+unsigned int mfIsZero256( const mfU256 *e ) { return mfIsZeroX( e->b, sizeof(mfU256) ); }
+unsigned int mfIsZero512( const mfU512 *e ) { return mfIsZeroX( e->b, sizeof(mfU512) ); }
+unsigned int mfIsZero1024( const mfU1024 *e ) { return mfIsZeroX( e->b, sizeof(mfU1024) ); }
 
 #pragma mark - Bitwise or
 void mforX( const mfU8 *s1, const mfU8 *s2, mfU8 *d, unsigned bytes )
@@ -349,7 +349,7 @@ void mfMultiplyU1024( const mfU1024 *s1, const mfU1024 *s2, mfU1024 *d, mfU1024 
 // -1 = error, division by 0
 int mfDivideUX( const mfU8 *n, const mfU8 *d, mfU8 *q, mfU8 *r, unsigned int bytes )
 {
-    if( mfiszeroX(d, bytes)) return -1;
+    if( mfIsZeroX(d, bytes)) return -1;
 
     mfU8 *left_over = (mfU8 *)malloc(bytes);
     mfU8 *shifted_quotient = (mfU8 *)malloc(bytes);
@@ -366,7 +366,7 @@ int mfDivideUX( const mfU8 *n, const mfU8 *d, mfU8 *q, mfU8 *r, unsigned int byt
         mfShiftLeftXBy1(shifted_quotient, bytes);
         mfShiftLeftXBy1(bit, bytes);
     }
-    while( mfiszeroX(bit, bytes) == 0 ) {
+    while( mfIsZeroX(bit, bytes) == 0 ) {
         if( mfCompareUX(left_over, shifted_quotient, bytes) != mfCompareSmaller ) {
             mfSubstractUX(left_over, shifted_quotient, left_over, bytes);
             mforX(q, bit, q, bytes);

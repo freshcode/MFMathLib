@@ -80,6 +80,20 @@ void mfZero256( mfU256 *d );
 void mfZero512( mfU512 *d );
 void mfZero1024( mfU1024 *d );
 
+// Checks whether e == 0
+// 0 = no
+// 1 = yes
+unsigned int mfIsZeroX( const mfU8 *e, unsigned int bytes );
+unsigned int mfIsZero8( const mfU8 *e );
+unsigned int mfIsZero16( const mfU16 *e );
+unsigned int mfIsZero32( const mfU32 *e );
+unsigned int mfIsZero64( const mfU64 *e );
+unsigned int mfIsZero128( const mfU128 *e );
+unsigned int mfIsZero256( const mfU256 *e );
+unsigned int mfIsZero512( const mfU512 *e );
+unsigned int mfIsZero1024( const mfU1024 *e );
+
+
 // Compare e to r
 // return value:
 // mfCompareEqual: e == r
